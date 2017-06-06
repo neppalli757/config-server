@@ -1,0 +1,10 @@
+--- 
+applications:
+- name: config-service
+  memory: 1G
+  instances: 1
+  random-route: true
+  path: build/libs/company.jar
+  services:
+  - configgit
+  buildpack: java_buildpack
