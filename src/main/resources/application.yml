@@ -1,6 +1,6 @@
 ---
 
-spring:
+ spring:
   cloud:
     config:
      server: 
@@ -9,7 +9,7 @@ spring:
          # ONLY include username and pwd if the repo is private
          username: ${vcap.services.configgit.credentials.username}
          password: ${vcap.services.configgit.credentials.password}
-security:
+ security:
     user:
       name: default
       password: password
