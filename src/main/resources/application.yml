@@ -3,14 +3,13 @@
 spring:
   cloud:
     config:
-      server: 
-        git:
-          uri: ${vcap.services.configgit.credentials.uri}
-          # ONLY include username and pwd if the repo is private
-          username: ${vcap.services.configgit.credentials.username}
-          password: ${vcap.services.configgit.credentials.password}
-		  
-    security:
-        user:
-          name: default
-          password: password
+     server: 
+      git:
+         uri: ${vcap.services.configgit.credentials.uri}
+         # ONLY include username and pwd if the repo is private
+         username: ${vcap.services.configgit.credentials.username}
+         password: ${vcap.services.configgit.credentials.password}
+         security:
+         user:
+         name: default
+         password: password
