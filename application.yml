@@ -6,9 +6,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://username:password@eureka-ungrazed-washaway.cfapps.io/eureka
-	  
+
 ---
 spring:
   profiles: cloud
-  ${vcap.application.uri[0]}
-  nonSecurePort: 80
+eureka.instance.hostname: ${vcap.application.uris[0]}
+eureka.instance.nonSecurePort: 80
