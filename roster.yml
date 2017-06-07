@@ -3,3 +3,9 @@ spring:
   profiles: cloud
   
 message: Sravan Neppalli
+
+---
+spring:
+  profiles: cloud
+eureka.instance.hostname: roster-contraptious-deathtrap.cfapps.io
+eureka.instance.nonSecurePort: 80
