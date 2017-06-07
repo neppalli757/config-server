@@ -2,7 +2,7 @@
 
 info:
   description: Training configuration repo
- eureka:
+eureka:
   client:
     serviceUrl:
       defaultZone: http://username:password@eureka-ungrazed-washaway.cfapps.io/eureka
